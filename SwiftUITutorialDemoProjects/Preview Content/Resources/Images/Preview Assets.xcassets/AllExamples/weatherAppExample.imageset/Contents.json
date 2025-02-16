@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "simulator_screenshot_A29BF193-744C-47EC-8778-43193AE850BE.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Simulator Screenshot - iPhone 16 Pro Max - 2025-02-07 at 23.14.20.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "top-view-desk-with-laptop-phone.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
