@@ -40,6 +40,11 @@
 		D84127292D567991006A5F74 /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84127232D567991006A5F74 /* PersonData.swift */; };
 		D841272A2D567991006A5F74 /* CardViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84127222D567991006A5F74 /* CardViewRow.swift */; };
 		D841272B2D567991006A5F74 /* CardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84127212D567991006A5F74 /* CardListView.swift */; };
+		D8B5E1B92D63A39B006BC604 /* TabbarEnumExample3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E1B82D63A38F006BC604 /* TabbarEnumExample3.swift */; };
+		D8B5E1BB2D63A442006BC604 /* TabbarViewExample3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E1BA2D63A442006BC604 /* TabbarViewExample3.swift */; };
+		D8B5E1BD2D63A4A1006BC604 /* TabItemExample3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E1BC2D63A4A1006BC604 /* TabItemExample3.swift */; };
+		D8B5E1BF2D63A530006BC604 /* TabShapeExample3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E1BE2D63A530006BC604 /* TabShapeExample3.swift */; };
+		D8B5E1C12D63A56A006BC604 /* HelpingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B5E1C02D63A56A006BC604 /* HelpingFunctions.swift */; };
 		D8F4D15A2D627911008499A4 /* TabbarViewExample2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F4D1592D627902008499A4 /* TabbarViewExample2.swift */; };
 		D8F4D15C2D627D20008499A4 /* TabbarViewExample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F4D15B2D627D13008499A4 /* TabbarViewExample1.swift */; };
 		D8F4D15E2D627EFC008499A4 /* TabbarEnumExample1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F4D15D2D627EEF008499A4 /* TabbarEnumExample1.swift */; };
@@ -92,6 +97,11 @@
 		D84127222D567991006A5F74 /* CardViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewRow.swift; sourceTree = "<group>"; };
 		D84127232D567991006A5F74 /* PersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
 		D8A6E57E2D37F83700F291EF /* SwiftUITutorialDemoProjects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorialDemoProjects.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8B5E1B82D63A38F006BC604 /* TabbarEnumExample3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarEnumExample3.swift; sourceTree = "<group>"; };
+		D8B5E1BA2D63A442006BC604 /* TabbarViewExample3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewExample3.swift; sourceTree = "<group>"; };
+		D8B5E1BC2D63A4A1006BC604 /* TabItemExample3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemExample3.swift; sourceTree = "<group>"; };
+		D8B5E1BE2D63A530006BC604 /* TabShapeExample3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShapeExample3.swift; sourceTree = "<group>"; };
+		D8B5E1C02D63A56A006BC604 /* HelpingFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpingFunctions.swift; sourceTree = "<group>"; };
 		D8F4D1592D627902008499A4 /* TabbarViewExample2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewExample2.swift; sourceTree = "<group>"; };
 		D8F4D15B2D627D13008499A4 /* TabbarViewExample1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewExample1.swift; sourceTree = "<group>"; };
 		D8F4D15D2D627EEF008499A4 /* TabbarEnumExample1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarEnumExample1.swift; sourceTree = "<group>"; };
@@ -134,6 +144,7 @@
 			children = (
 				D812EF222D5BE74A0068F846 /* TabbarExample1 */,
 				D8F4D1562D6278D5008499A4 /* TabbarExample2 */,
+				D8B5E1B72D63A377006BC604 /* TabbarExample3 */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -370,6 +381,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D8B5E1B72D63A377006BC604 /* TabbarExample3 */ = {
+			isa = PBXGroup;
+			children = (
+				D8B5E1C02D63A56A006BC604 /* HelpingFunctions.swift */,
+				D8B5E1BE2D63A530006BC604 /* TabShapeExample3.swift */,
+				D8B5E1BC2D63A4A1006BC604 /* TabItemExample3.swift */,
+				D8B5E1B82D63A38F006BC604 /* TabbarEnumExample3.swift */,
+				D8B5E1BA2D63A442006BC604 /* TabbarViewExample3.swift */,
+			);
+			path = TabbarExample3;
+			sourceTree = "<group>";
+		};
 		D8F4D1562D6278D5008499A4 /* TabbarExample2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +500,7 @@
 				D84126CB2D5507B5006A5F74 /* TopicListMockData.swift in Sources */,
 				D84126CC2D5507B5006A5F74 /* TopicListModel.swift in Sources */,
 				D812EF112D5BA0250068F846 /* TabbarExampleListView.swift in Sources */,
+				D8B5E1B92D63A39B006BC604 /* TabbarEnumExample3.swift in Sources */,
 				D8F4D1602D627F3F008499A4 /* CustomTabbarExample1.swift in Sources */,
 				D84126CD2D5507B5006A5F74 /* TopicListView.swift in Sources */,
 				D84126CE2D5507B5006A5F74 /* GroupBoxExample.swift in Sources */,
@@ -491,13 +515,17 @@
 				D84127272D567991006A5F74 /* ProfileCardTabbar.swift in Sources */,
 				D84127282D567991006A5F74 /* ProfileCardTabbarView.swift in Sources */,
 				D84127292D567991006A5F74 /* PersonData.swift in Sources */,
+				D8B5E1BD2D63A4A1006BC604 /* TabItemExample3.swift in Sources */,
+				D8B5E1BB2D63A442006BC604 /* TabbarViewExample3.swift in Sources */,
 				D841272A2D567991006A5F74 /* CardViewRow.swift in Sources */,
 				D8F4D15C2D627D20008499A4 /* TabbarViewExample1.swift in Sources */,
+				D8B5E1C12D63A56A006BC604 /* HelpingFunctions.swift in Sources */,
 				D841272B2D567991006A5F74 /* CardListView.swift in Sources */,
 				D84126D32D5507B5006A5F74 /* LazyVGridExampleView.swift in Sources */,
 				D812EF1B2D5BA54C0068F846 /* TabbarExampleListModel.swift in Sources */,
 				D84126D42D5507B5006A5F74 /* StaticGridExampleView.swift in Sources */,
 				D812EF212D5BD91F0068F846 /* CommonListCellRowView.swift in Sources */,
+				D8B5E1BF2D63A530006BC604 /* TabShapeExample3.swift in Sources */,
 				D84126D52D5507B5006A5F74 /* ScrollViewPagingAnimation.swift in Sources */,
 				D84126D62D5507B5006A5F74 /* WeatherButton.swift in Sources */,
 				D84126D72D5507B5006A5F74 /* DetailedWeatherView.swift in Sources */,

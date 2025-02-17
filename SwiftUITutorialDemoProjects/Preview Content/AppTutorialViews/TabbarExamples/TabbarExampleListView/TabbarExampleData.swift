@@ -25,8 +25,8 @@ struct TabbarExampleData {
         TabbarExampleListModel(
             title: "Tabbar Example3",
             description: "Check Out Animated design animated view in Tabbar view.",
-            viewImage: UIImage(resource: .tabbarViewExample2),
-            destination: .tabbarViewExample2
+            viewImage: UIImage(resource: .tabbarViewExample3),
+            destination: .tabbarViewExample3
         )
     ]
 }
