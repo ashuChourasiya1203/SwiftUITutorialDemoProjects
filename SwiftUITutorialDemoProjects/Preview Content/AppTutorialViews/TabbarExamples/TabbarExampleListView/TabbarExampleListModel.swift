@@ -29,7 +29,7 @@ enum TabbarExampleType: CaseIterable {
     var view: AnyView {
         switch self {
         case .tabbarViewExample1: return AnyView(TabbarViewExample1())
-        case .tabbarViewExample2: return AnyView(TabbarViewExample1())
+        case .tabbarViewExample2: return AnyView(TabbarViewExample2())
         case .tabbarViewExample3: return AnyView(TabbarViewExample3())
         }
     }

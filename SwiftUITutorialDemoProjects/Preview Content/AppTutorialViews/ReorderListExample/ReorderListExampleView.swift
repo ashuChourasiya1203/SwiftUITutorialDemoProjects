@@ -12,18 +12,27 @@ struct ReorderListExampleView: View {
     
     var body: some View {
         NavigationStack {
-            ///Example 1: Using editAction where this method will get call each time the episodes variable get some value or perform any crud operation. which may cause app to slowdown.
-            //self.Example1
-            
-            ///Example 2: Using onMove method we can reorder the list only when the data move to some other press instead of updating data each time when data is manupulate into our array variable.
-            //self.Example2
-            
-            ///Conclusion: Method two is more precious when Reordering the list of data.
-            self.Example2
+            VStack(spacing: 10) {
+                Text("Long Press and try to reorder the list")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.red)
+                    .padding(.top, 15)
+                
+                ///Example 1: Using editAction where this method will get call each time the episodes variable get some value or perform any crud operation. which may cause app to slowdown.
+                //self.example1()
+                
+                ///Example 2: Using onMove method we can reorder the list only when the data move to some other press instead of updating data each time when data is manupulate into our array variable.
+                //self.example2()
+                
+                ///Conclusion: Method two is more precious when Reordering the list of data.
+                self.example2()
+            }
+            .navigationTitle("Episodes")
         }
     }
     
-    var Example1: some View {
+    private func example1() -> some View {
         List(self.$episodes, editActions: .move) { episode in
             HStack(alignment: .top, spacing: 12) {
                 RoundedRectangle(cornerRadius: 12)
@@ -41,7 +50,6 @@ struct ReorderListExampleView: View {
                 }
             }
         }
-        .navigationTitle("Episodes")
         .onChange(of: self.episodes) { oldValue, newValue in
             var counter = 0
             for episode in newValue {
@@ -53,7 +61,7 @@ struct ReorderListExampleView: View {
         }
     }
     
-    var Example2: some View {
+    private func example2() -> some View {
         List {
             ForEach(self.episodes) { episode in
                 HStack(alignment: .top, spacing: 12) {
@@ -68,7 +76,6 @@ struct ReorderListExampleView: View {
                         Text("Here is the sort description for the \(episode.title)")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
-                        
                     }
                 }
             }
@@ -82,15 +89,13 @@ struct ReorderListExampleView: View {
                 }
                 print("------------------")
             }
-            .navigationTitle("Episodes")
         }
+        .listStyle(PlainListStyle())
     }
 }
 
 #Preview {
-    NavigationStack {
-        ReorderListExampleView()
-    }
+    ReorderListExampleView()
 }
 
 fileprivate class Episode: Identifiable, Equatable {
@@ -112,7 +117,7 @@ fileprivate class Episode: Identifiable, Equatable {
 
 fileprivate struct MockData {
     static var episode: [Episode] {
-        [
+        let episodes = [
             Episode(title: "Pink Episode", color: .pink, listOrder: 0),
             Episode(title: "Teal Episode", color: .teal, listOrder: 1),
             Episode(title: "Indigo Episode", color: .indigo, listOrder: 2),
@@ -124,5 +129,6 @@ fileprivate struct MockData {
             Episode(title: "Red Episode", color: .red, listOrder: 8),
             Episode(title: "Blue Episode", color: .blue, listOrder: 9)
         ]
+        return episodes
     }
 }
