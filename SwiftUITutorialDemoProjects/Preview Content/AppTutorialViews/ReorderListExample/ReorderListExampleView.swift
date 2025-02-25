@@ -46,7 +46,6 @@ struct ReorderListExampleView: View {
                     Text("Here is the sort description for the \(episode.title.wrappedValue)")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
-                        
                 }
             }
         }
